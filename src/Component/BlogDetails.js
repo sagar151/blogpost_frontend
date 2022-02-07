@@ -4,7 +4,7 @@ import {updatePost, deletePost, displayPost} from "../Action/BlogAction";
 import moment from "moment";
 import  "./BlogDetails.css"
 
-const  BlogDetails=({displayPost,history,deletePost,post})=>{
+const  BlogDetails=({displayPost,history,deletePost,updatePost,post})=>{
     useEffect(()=>{
         displayPost()
     },[])

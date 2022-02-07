@@ -29,6 +29,7 @@ const getPostById = (post, id) => {
 };
 const mapStateToProps = (state, ownProps) => {
   let id = ownProps.match.params.post_id;
+
   const post =
     id && state.length > 0
       ? state.find((post) => post._id === id)

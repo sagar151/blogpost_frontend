@@ -1,19 +1,10 @@
 import React, { useEffect } from "react";
 import { displayPost } from "../Action/BlogAction";
 import { Link } from "react-router-dom";
-import Card from "@mui/material/Card";
-import CardActions from "@mui/material/CardActions";
-import CardContent from "@mui/material/CardContent";
-import CardMedia from "@mui/material/CardMedia";
-// import Button from "@mui/material/Button";
-import Typography from "@mui/material/Typography";
 import moment from "moment";
-
-import { Jumbotron, Button } from "reactstrap";
-
+import { Jumbotron } from "reactstrap";
 import { connect } from "react-redux";
-import { bgcolor } from "@mui/system";
-const Home = ({displayPost,post}) => {
+const Home = ({post}) => {
   useEffect(() => {
     displayPost();
   }, []);
