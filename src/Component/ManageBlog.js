@@ -3,7 +3,7 @@ import axios from "axios";
 import { connect } from "react-redux";
 import AddBlogForm from "./AddBlogForm";
 import { createPost, updatePost } from "../Action/BlogAction";
-const ManageBlog = ({createPost,updatePost,post}) => {
+const ManageBlog = ({createPost,updatePost}) => {
   const [post, setpost] = useState(post);
   const [title, setTitle] = useState("");
   const [body, setBody] = useState("");

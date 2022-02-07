@@ -4,7 +4,7 @@ import {updatePost, deletePost, displayPost} from "../Action/BlogAction";
 import moment from "moment";
 import  "./BlogDetails.css"
 
-const  BlogDetails=({displayPost,history,deletePost,updatePost,post})=>{
+const  BlogDetails=({displayPost,history,deletePost,updatePost})=>{
     useEffect(()=>{
         displayPost()
     },[])
@@ -31,7 +31,7 @@ const  BlogDetails=({displayPost,history,deletePost,updatePost,post})=>{
                <p>
                    posted by: anoynomus user
                </p>
-               <p>{props.post.body}</p>
+               <p>{post.body}</p>
            </div>
                 <br/>
                 <button type="button" className="btn btn-primary" onClick={handleDelete} >Delete</button>
