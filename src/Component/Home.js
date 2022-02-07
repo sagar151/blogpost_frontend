@@ -13,21 +13,17 @@ import { Jumbotron, Button } from "reactstrap";
 
 import { connect } from "react-redux";
 import { bgcolor } from "@mui/system";
-const Home = (props) => {
+const Home = ({displayPost,post}) => {
   useEffect(() => {
-    props.displayPost();
+    displayPost();
   }, []);
-  {
-    console.log("data", props.post);
-  }
-
   return (
     <div>
       <h4>Home Page</h4>
       <br />
 
-      {props.post ? (
-        props.post.map((result) => {
+      {post ? (
+        post.map((result) => {
           return (
             <>
           
